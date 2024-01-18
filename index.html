@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Password Generator </title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="window-password">
+      <div class="password" id="Password">ccccc</div>
+      <i class="fa-regular fa-copy  copy" id="copy"></i>
+    </div>
+    <div class="dashboard ">
+      <!-- Start Length -->
+      <div class="Character-Length">
+        <div>
+          <span> Character Length</span>
+          <span id="pass-length">8</span>
+        </div>
+        <input type="range" size="16" max="16" min="1" value="8" class="range">
+      </div>
+      <!-- End Length  -->
+      <!-- Start Settings -->
+      <div class="properties">
+        <label class="option">
+          <input type="checkbox" checked="" id="uppercase">
+          <div class="checkmark"></div>
+          <span>Include Uppercase Letters</span>
+        </label>
+        <label class="option">
+          <input type="checkbox" checked="" id="lowercase">
+          <div class="checkmark"></div>
+          <span>Include Lowercase Letters</span>
+        </label>
+        <label class="option">
+          <input type="checkbox" checked="" id="numbers">
+          <div class="checkmark"></div>
+          <span>Include Numbers</span>
+        </label>
+        <label class="option">
+          <input type="checkbox" id="symbols">
+          <div class="checkmark"></div>
+          <span>Include Symbols</span>
+        </label>
+      </div>
+      <!-- End Settings -->
+      <!--  Start STRENGTH -->
+      <div class="strength">
+        <div> STRENGTH </div>
+        <div class="level">
+          <h1 id="difficulty">MEDIUM</h1>
+          <div class="medium" id="blocks">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- start GENERATE -->
+      <button class="generate-btn" id="generate">Generate</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
