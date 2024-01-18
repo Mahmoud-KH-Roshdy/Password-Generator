@@ -269,6 +269,17 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .dashboard .strength .level #blocks > span {
+    width: 9px ;
+  }
+  .properties{
+    gap: 10px ;
+  }
+  .window-password .password{
+    font-size: 20px ;
+  }
+  }
 /* Js */
 #blocks.easy span:first-child {
   background-color: var(--red) !important;
